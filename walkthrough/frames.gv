@@ -1,0 +1,18 @@
+digraph G {
+"map" -> "base_footprint"[label="Broadcaster: /base_base_broad\nAverage rate: 98.837 Hz\nMost recent transform: 1575595485.345 ( -0.008 sec old)\nBuffer length: 4.937 sec\n"];
+"map" -> "odom"[label="Broadcaster: /cartographer_node\nAverage rate: 862.292 Hz\nMost recent transform: 1575595485.492 ( -0.155 sec old)\nBuffer length: 5.096 sec\n"];
+"odom" -> "base_link"[label="Broadcaster: /cartographer_node\nAverage rate: 885.301 Hz\nMost recent transform: 1575595485.335 ( 0.001 sec old)\nBuffer length: 4.940 sec\n"];
+"base_link" -> "caster_back_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1575595485.336 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "imu_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1575595485.336 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "base_scan"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1575595485.336 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "fcu"[label="Broadcaster: /base_to_fcu\nAverage rate: 98.795 Hz\nMost recent transform: 1575595485.343 ( -0.006 sec old)\nBuffer length: 4.929 sec\n"];
+"base_link" -> "local_origin"[label="Broadcaster: /base_to_local\nAverage rate: 98.961 Hz\nMost recent transform: 1575595485.338 ( -0.002 sec old)\nBuffer length: 4.921 sec\n"];
+"laser_frame" -> "laser"[label="Broadcaster: /base_to_laser_broadcaster\nAverage rate: 25.116 Hz\nMost recent transform: 1575595485.355 ( -0.019 sec old)\nBuffer length: 4.897 sec\n"];
+"base_link" -> "laser_frame"[label="Broadcaster: /base_link_to_laser4\nAverage rate: 24.974 Hz\nMost recent transform: 1575595485.295 ( 0.041 sec old)\nBuffer length: 4.845 sec\n"];
+"local_origin" -> "local_origin_ned"[label="Broadcaster: /mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1575595485.336 sec old)\nBuffer length: 0.000 sec\n"];
+"fcu" -> "fcu_frd"[label="Broadcaster: /mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1575595485.336 sec old)\nBuffer length: 0.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1575595485.336"[ shape=plaintext ] ;
+ }->"map";
+}
