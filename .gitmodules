@@ -1,0 +1,9 @@
+[submodule "wlakthrough/cartographer_ros"]
+	path = wlakthrough/cartographer_ros
+	url = https://github.com/cartographer-project/cartographer_ros
+[submodule "cartographer_ros"]
+	path = cartographer_ros
+	url = https://github.com/cartographer-project/cartographer_ros
+[submodule "ros"]
+	path = ros
+	url = https://github.com/ros/ros
